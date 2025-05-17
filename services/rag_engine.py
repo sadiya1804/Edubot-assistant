@@ -5,12 +5,10 @@ import chromadb
 from api.openai_client import OpenAIClient
 import re
 import sys
-from chromadb import PersistentClient
 
 class RAGEngine:
     def __init__(self, collection_dir="./chromadb"):
-        self.client = PersistentClient(path="/tmp/chroma")
-        #self.client = chromadb.PersistentClient(path=collection_dir)
+        self.client = chromadb.Client()  # 👉 Mode in-memory
         self.openai = OpenAIClient()
 
     def process_pdf(self, pdf_file, collection_name):
