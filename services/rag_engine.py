@@ -1,11 +1,19 @@
 import os
 import streamlit as st  
 import fitz  # PyMuPDF
-import chromadb
 from api.openai_client import OpenAIClient
 import re
 
-from chromadb.config import Settings 
+# 👇 Forcer ChromaDB à utiliser pysqlite3 à la place de sqlite3
+try:
+    import pysqlite3
+    import sys
+    sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
+except ImportError:
+    pass
+
+import chromadb
+from chromadb.config import Settings
 
 class RAGEngine:
     def __init__(self, collection_dir="./chromadb"):

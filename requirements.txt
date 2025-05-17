@@ -1,4 +1,3 @@
-pip
 openai
 Pillow
 python-dotenv
@@ -8,3 +7,4 @@ Markdown
 PyMuPDF
 chromadb
 protobuf==3.20.*
+pysqlite3-binary
