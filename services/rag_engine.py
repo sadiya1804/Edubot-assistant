@@ -4,11 +4,12 @@ import fitz  # PyMuPDF
 import chromadb
 from api.openai_client import OpenAIClient
 import re
-import sys
+
+from chromadb.config import Settings 
 
 class RAGEngine:
     def __init__(self, collection_dir="./chromadb"):
-        self.client = chromadb.Client()  # 👉 Mode in-memory
+        self.client = chromadb.Client(Settings(anonymized_telemetry=False, is_persistent=False))
         self.openai = OpenAIClient()
 
     def process_pdf(self, pdf_file, collection_name):
