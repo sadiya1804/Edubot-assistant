@@ -7,3 +7,4 @@ streamlit
 Markdown
 PyMuPDF
 chromadb
+protobuf==3.20.*
