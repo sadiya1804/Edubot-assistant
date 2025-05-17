@@ -1,5 +1,4 @@
 pip
-fitz
 openai
 Pillow
 python-dotenv
@@ -8,4 +7,3 @@ streamlit
 Markdown
 PyMuPDF
 chromadb
-sqlite3
