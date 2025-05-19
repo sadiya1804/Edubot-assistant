@@ -121,8 +121,8 @@ L'application inclut également un mode vocal pour interagir avec EduBot en util
 
 ### 1. Cloner le dépôt
 ```bash
-git clone https://github.com/hafsa223/Chatbot-Multimodal-Intelligent/tree/main
-cd Chatbot-Multimodal-Intelligent
+git clone https://github.com/sadiya1804/Edubot-assistant.git
+cd Edubot-assistant
 ```
 
 ### 2. Installer les dépendances
