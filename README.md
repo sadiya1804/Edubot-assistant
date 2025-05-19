@@ -185,7 +185,7 @@ streamlit run app.py
 
 ## 📎 Déploiement final
 
-- Front hébergé sur **Streamlit Cloud**: https://edubot-ynov1.streamlit.app/
+- Front hébergé sur **Streamlit Cloud**: https://edubot-ynov.streamlit.app/
 - Projet complet sur Github ✅
 
 
