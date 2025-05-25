@@ -55,15 +55,6 @@ st.markdown("""
 
 # Sidebar with features
 with st.sidebar:
-
-    
-    theme_choice = st.radio("Choisir un thème :", ["Light Mode", "Dark Mode"])
-    if theme_choice == "Light Mode":
-        st.info("Pour activer le mode clair, modifiez le fichier `config.toml` et définissez `[theme] base = 'light'`.")
-    elif theme_choice == "Dark Mode":
-        st.info("Pour activer le mode sombre, modifiez le fichier `config.toml` et définissez `[theme] base = 'dark'`.")
-
-
     # Audio feature section
     st.header("Mode Vocal 🎤")
     
